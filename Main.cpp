@@ -62,8 +62,6 @@ int main() {
 
 
    
-   //mySchedule.exportFile("K:\\Users\\Salim\\Desktop\\CENG206 Project II\\sample_files\\schedule.csv");
-   
 
     return 0;
 }
