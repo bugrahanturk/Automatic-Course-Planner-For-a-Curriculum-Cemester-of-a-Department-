@@ -16,7 +16,7 @@ int main() {
    vector<Course *> myCourses;
    try {
 
-       myCourses = Course::readCoursesFile("C:\\Users\\Salim\\Desktop\\CENG206 Project II\\sample_files\\courses.csv");
+       myCourses = Course::readCoursesFile("...\\sample_files\\courses.csv");
    }
    catch (int e) {
        cout << "Proper Courses file is not found! " << endl;
@@ -27,7 +27,7 @@ int main() {
    cout << "\n\n";
 
    try {
-       mySchedule.myClasses = Classes::readClassesFile("C:\\Users\\Salim\\Desktop\\CENG206 Project II\\sample_files\\classroom.csv");
+       mySchedule.myClasses = Classes::readClassesFile("...\\classroom.csv");
    }
    catch (...) {
        cout << "Proper Classes file is not found! " << endl;
@@ -36,7 +36,7 @@ int main() {
  
    bool cont;
    try {
-       cont = mySchedule.takeService(myCourses, "C:\\Users\\Salim\\Desktop\\CENG206 Project II\\sample_files\\service.csv");
+       cont = mySchedule.takeService(myCourses, "...\\sample_files\\service.csv");
        if (!cont) {
            cout << "There is no way to make a perfect schedule for the department.";
            return 0;
@@ -46,7 +46,7 @@ int main() {
        cout << "services not found";
    }
    
-   cont = mySchedule.takeBusy(myCourses, "C:\\Users\\Salim\\Desktop\\CENG206 Project II\\sample_files\\busy.csv");
+   cont = mySchedule.takeBusy(myCourses, "...\\sample_files\\busy.csv");
    if (!cont) {
        cout << "There is no way to make a perfect schedule for the department.";
        return 0;
